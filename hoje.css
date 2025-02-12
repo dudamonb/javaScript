@@ -1,0 +1,52 @@
+body{
+
+    font-family: sans-serif; /*Definir o tipo de fonte*/
+    background-color: #f4f4f4; /*Definiçãoda cor de fundo */
+    display:flex; /*Utilizar do flex*/
+    justify-content:center; /*centraliza horizontalmente*/
+    align-items:center; /* centralizar verticalmente*/
+    min-height: 100vh; /*define a altura minima do corpo para*/
+    margin:0; /*remove as margens do corpo*/
+    
+
+}
+
+div[one]{
+    background-color: #fff; /*altera a cor para branco np hexadecimal*/
+    padding: 20px; /*preenchiento interno para 20 pixels*/
+    border-radius: 8px; /*raio da bordo (bordas arrendondas)*/
+    box-shadow: 0 2px 8px rgba(red, green, blue, alpha); /*aplicar sombra a*/
+    display:flex; /*direção do alinhamento flex*/
+    flex-direction: column; /*direção do alinhamento verticalmente*/
+    align-items: center; /*centraliza os elementos internos horizontalmente*/
+
+}
+
+#carta{
+    max-width: 100px; /*largura máxima da imagem*/
+    height: auto; /*mantém a proporção da altura*/
+    margin-bottom: 15px; /*tamanho da margem inferior*/
+    border-radius: 4px; /*raio da borda*/
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);/*sombra suave*/
+
+}
+
+#botao-carta{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px; /*dfine o preenchimento interno vertical-horizontal*/
+    border-radius: 5px;
+    cursor: pointer; /*o cursor para uma mãozinha ao passar sobre o botão */
+    font-size: 16px; /*tamanho da fonte*/
+    
+}
+#botao-carta:hover{
+    color:#007bff;
+    background-color: #0056b3; /*escureciment ao interagir com o cursor*/
+
+    
+}
+     
+ 
+    
+

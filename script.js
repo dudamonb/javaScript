@@ -1,17 +1,20 @@
-const url = 'https://dummyjson.com/products'  // importar o endereço da API
+const url = 'https://deckofcardsapi.com/api/deck/new/draw/?count=2';
+const botao = document.querySelector('#botao-carta') // arthur me ensinou//
+const valorImg = document.querySelector("#cartinha")
 
- async function chamarAPI(){
-    fetch(url) // fetch é a função para interagir com a API
+async function buscarCarta() {
+    const dado = await fetch(url)
+    if(dado.ok){
+        const carta = await dado.json()
+        valorImg.src=carta.cards[0].image
 
-    const resp = await fetch(url); // vai salvar o retorno(resposta = resp) da API dentro da variável resp = constante para armazenar a respota
-    
-    // await, função assícrono (não acontece ao mesmo tempo)
-    if(resp.status === 200){
-        const obj = await resp.json() // resposta em json // 
-        console.log(obj);
     }
-     console.log(resp)
-    
-
 }
-chamarAPI();
+botao.addEventListener('click',()=>{  // arthur me ensinou
+    buscarCarta()
+})
+
+
+
+
+
