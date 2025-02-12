@@ -1,0 +1,32 @@
+.textinho{
+    text-align: center;
+    height: 60px;
+    font-size: 30px;
+    
+}
+
+.caixinha{
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:1px solid;
+    width: 50em;
+    height: 40em;
+
+}
+
+.butao{
+    background-color: pink;
+    color: white;
+    width: 30em;
+    height: 10em;
+    
+}
+#tudinho{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+   
